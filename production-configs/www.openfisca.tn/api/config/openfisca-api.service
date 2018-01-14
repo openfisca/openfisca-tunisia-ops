@@ -1,0 +1,12 @@
+[Unit]
+Description=OpenFisca Web API - New
+
+[Service]
+Environment=SERVER_NAME=www.openfisca.tn/api/v0.13.0
+ExecStart=/home/benjello/.local/share/virtualenvs/openfisca-core-v20/bin/openfisca serve --country-package openfisca_tunisia --port 8000
+User=benjello
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
