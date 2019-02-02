@@ -1,0 +1,14 @@
+[Unit]
+Description=OpenFisca new legislation explorer
+
+[Service]
+Environment=SERVER_NAME=openfisca.tn/explore/
+Environment=COUNTRY_PRODUCTION_CONFIG=tunisia
+Environment=NODE_ENV=production
+ExecStart=/usr/bin/node /home/benjello/openfisca-core-v20/legislation-explorer/index.js
+User=benjello
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+

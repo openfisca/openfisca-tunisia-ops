@@ -1,0 +1,12 @@
+[Unit]
+Description=OpenFisca-Tunisia website
+
+[Service]
+Environment=SERVER_NAME=openfisca.tn
+ExecStart=/usr/local/bin/npm start --prefix /home/benjello/openfisca.tn/
+User=benjello
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
