@@ -41,13 +41,23 @@ Voir l'état d'un service :
 `systemctl status NOM_SERVICE`  
 
 Lire les traces d'un service :  
-`journalctl -f -u NOM_SERVICE`  
+`journalctl -f -u NOM_SERVICE`
+`tail -f /var/log/nginx/NOM_FICHIER.log`  
+
+### Statuer sur l'état des ports
+
+netstat -tulpn
 
 ## Configuration nginx
 
 Gestion des fichiers `.conf`.  
 Répertoire des fichiers de configuration : `/etc/nginx`
+> Répertoire type : `sites-enabled`
 
 ### Ré-exécution 
 
 Relance de nginx même : `service nginx reload`
+
+## users
+
+> Mémo pour créer un [bot de déploiement](https://github.com/openfisca/openfisca-ops/blob/2a84fd7fef1fc1e8d3534efb2ab685e98f620d3e/guides/Create-a-deploy-user.md). 
