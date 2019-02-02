@@ -3,6 +3,22 @@ Scripts et fichiers de configuration d'OpenFisca-Tunisia sur le serveur.
 
 ## Build
 
+### Virtualenvs python
+
+Créer un environnement virtuel : 
+* Commande générique virtualenv : `python3 -m venv /tmp/venv/MON_VIRTUALENV`
+* Avec pew pour tunisia : `pew new MON_VIRTUALENV`
+
+L'activer : 
+* virtualenv : `source MON_VIRTUALENV/bin/activate`
+* pew : `pew workon MON_VIRTUALENV`
+> Emplacement environnement créé par pew : `/.../.local/share/virtualenvs/MON_VIRTUALENV/bin/activate`
+
+Le désactiver : 
+* virtualenv : `deactivate`
+* pew : `exit`
+
+
 ### Legislation Explorer
 
 ```
